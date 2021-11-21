@@ -8,16 +8,20 @@
     android:orientation="vertical"
     android:gravity="center">
     <EditText
+        android:id="@+id/edt_phoneNumber"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
+        android:inputType="phone"
         android:background="@drawable/views_back"
         android:hint="@string/phoneNumber"
         android:layout_marginVertical="20dp"/>
     <EditText
+        android:id="@+id/edt_password"
         android:layout_width="250dp"
         android:layout_height="50dp"
         android:paddingLeft="20dp"
+        android:inputType="textPassword"
         android:background="@drawable/views_back"
         android:hint="@string/password"/>
     <TextView
@@ -26,6 +30,7 @@
         android:text="forgot password?"
         android:layout_marginLeft="55dp"/>
     <Button
+        android:id="@+id/btn_login"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="@string/Login"
@@ -38,6 +43,7 @@
         android:text="OR"
         />
 <Button
+    android:id="@+id/btn_signUp"
     android:layout_width="120dp"
     android:layout_height="wrap_content"
     android:text="@string/SignUp"

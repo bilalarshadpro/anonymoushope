@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignupActivity">
+    tools:context=".SignupActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/edt_full_name"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:inputType="text"
+        android:background="@drawable/views_back"
+        android:hint="@string/Name"
+        android:layout_marginVertical="20dp"/>
+    <EditText
+        android:id="@+id/edt_phoneNum4Signup"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:inputType="phone"
+        android:background="@drawable/views_back"
+        android:hint="@string/phoneNumber" />
+    <EditText
+        android:id="@+id/edt_pass4Signup"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/views_back"
+        android:layout_marginVertical="20dp"
+        android:hint="@string/password" />
+    <EditText
+        android:id="@+id/edt_re_pass4signUp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:inputType="textPassword"
+        android:background="@drawable/views_back"
+        android:hint="@string/re_password" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textColor="#636363"
+        android:layout_marginVertical="20dp"
+        android:background="@drawable/btn_back"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
