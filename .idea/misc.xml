@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Xahee/Downloads/anonymoushope/app/src/main/res/drawable-v21/btn.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Xahee/Downloads/anonymoushope/app/src/main/res/drawable-v21/btn_back.xml" value="0.20092592592592592" />
+        <entry key="..\:/Users/Xahee/Downloads/anonymoushope/app/src/main/res/drawable/btn.xml" value="0.20092592592592592" />
+        <entry key="..\:/Users/Xahee/Downloads/anonymoushope/app/src/main/res/drawable/btn_back.xml" value="0.20092592592592592" />
+        <entry key="..\:/Users/Xahee/Downloads/anonymoushope/app/src/main/res/drawable/views_back.xml" value="0.20092592592592592" />
+        <entry key="..\:/Users/Xahee/Downloads/anonymoushope/app/src/main/res/layout/activity_login.xml" value="0.209375" />
+        <entry key="..\:/Users/Xahee/Downloads/anonymoushope/app/src/main/res/layout/activity_splash.xml" value="0.209375" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

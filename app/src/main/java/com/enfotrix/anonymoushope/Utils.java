@@ -1,0 +1,36 @@
+package com.enfotrix.anonymoushope;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+
+public class Utils {
+    public SharedPreferences sharedPreferences;
+    public static final String MyPreferences = "MyPrefs";
+    public static final String Token = "Token";
+    public String username;
+    public String password;
+
+
+    public Utils(Context context){
+        sharedPreferences = context.getSharedPreferences(MyPreferences, Context.MODE_PRIVATE);
+    }
+    public String getToken(){
+        return sharedPreferences.getString(Token,"");
+    }
+    public void putToken(String token){
+        sharedPreferences.edit().putString(Token,token).commit();
+    }
+    public String getDetails(){return sharedPreferences.getString(username,password);}
+    public void putDetails(String userName,String passWord){
+        sharedPreferences.edit().putString(userName,passWord);
+    }
+    public void logout(){
+        sharedPreferences.edit().putString(Token,"logout").commit();
+    }
+    public boolean isLoggedIn(){
+        boolean LoggedIn=true;
+        if (getToken().equals("logout")||getToken().isEmpty()) LoggedIn=false;
+        return LoggedIn;
+    }
+
+}
