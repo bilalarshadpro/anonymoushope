@@ -7,7 +7,7 @@
     tools:context=".SignupActivity"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/signup_background"
+    android:background="@drawable/signup_background2"
 
 >
 
@@ -19,7 +19,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginTop="-170dp"
         android:layout_marginRight="10dp"
-        android:background="@drawable/signup_background"
+       app:cardBackgroundColor="@color/cardview_shadow_end_color"
         android:elevation="10dp"
         app:cardElevation="10dp"
         app:cardMaxElevation="10dp">
@@ -28,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:textColor="@color/white"
             android:text="Sign Up"
             android:textSize="40dp" />
     </androidx.cardview.widget.CardView>
@@ -44,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
             android:layout_marginVertical="3dp"
-            app:cardBackgroundColor="@color/cardview_shadow_end_color"
+         app:cardBackgroundColor="@color/cardview_shadow_start_color"
             android:elevation="15dp"
             app:cardCornerRadius="30dp">
 

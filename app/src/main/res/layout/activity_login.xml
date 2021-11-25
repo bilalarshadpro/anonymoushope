@@ -7,7 +7,7 @@
     tools:context=".LoginActivity"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/signup_background">
+    android:background="@drawable/login_background">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
@@ -36,10 +36,9 @@
             android:layout_width="match_parent"
             android:layout_height="700dp"
             android:layout_marginTop="20dp"
-            app:cardCornerRadius="35dp"
-            app:cardElevation="8dp"
             app:cardBackgroundColor="@color/cardview_shadow_end_color"
-            >
+            app:cardCornerRadius="35dp"
+            app:cardElevation="8dp">
 
 
             <LinearLayout
@@ -93,9 +92,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="right"
-                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginHorizontal="100dp"
                     android:layout_marginVertical="5dp"
-                    android:text="Forgot Password?" />
+                    android:text="Forgot Password?"
+                    android:textColor="@color/white" />
 
                 <Button
                     android:id="@+id/btn_login"
@@ -111,7 +111,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="or" />
+                    android:text="or"
+                    android:textColor="@color/white" />
 
                 <Button
                     android:id="@+id/btn_signUp"

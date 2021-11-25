@@ -13,12 +13,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:background="#615ACD"
+        android:background="#626265"
         android:gravity="center"
         android:text="Welcome!"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="40dp"></TextView>
+        android:textSize="40dp">
+    </TextView>
 
     <ImageView
         android:id="@+id/img"
