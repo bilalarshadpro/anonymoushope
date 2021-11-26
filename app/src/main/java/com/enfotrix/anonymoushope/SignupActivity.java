@@ -22,8 +22,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SignupActivity extends AppCompatActivity {
-    private EditText edt_fullName,edt_phoneNo,edt_pass,edt_retypePass;
-    private Button btn_save;
+    private EditText edt_fullName,edt_phoneNo,edt_pass,edt_retypePass,edt_email;
+    private Button btn_signUp;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
@@ -34,9 +34,10 @@ public class SignupActivity extends AppCompatActivity {
         edt_phoneNo=findViewById(R.id.edt_phoneNum4Signup);
         edt_pass=findViewById(R.id.edt_pass4Signup);
         edt_retypePass=findViewById(R.id.edt_re_pass4signUp);
-        btn_save=findViewById(R.id.btn_saveSignup);
+        btn_signUp=findViewById(R.id.btn_saveSignup);
+        edt_email=findViewById(R.id.email);
 
-        btn_save.setOnClickListener(new View.OnClickListener() {
+        btn_signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 validate();
@@ -49,10 +50,12 @@ public class SignupActivity extends AppCompatActivity {
             edt_fullName.setError("Enter FullName");
         }else if (edt_phoneNo.getText().toString().isEmpty()){
             edt_phoneNo.setError("Enter PhoneNumber");
+        }else if (edt_email.getText().toString().isEmpty()){
+            edt_email.setError("Enter Email Address");
         }
         else if (edt_pass.getText().toString().isEmpty()){
             edt_pass.setError("Enter Password");
-        }else if (!edt_pass.getText().toString().equals(edt_retypePass.getText().toString())){
+        }else if (!edt_retypePass.getText().toString().equals(edt_pass.getText().toString())){
             edt_retypePass.setError("Password does not match");
         }
         else if (edt_pass.getText().toString().length()<8){
@@ -73,12 +76,14 @@ public class SignupActivity extends AppCompatActivity {
                     }
                     else{
                         String fullName=edt_fullName.getText().toString().trim();
+                        String email=edt_email.getText().toString().trim();
                         String phoneNumber=edt_phoneNo.getText().toString().trim();
                         String password=edt_pass.getText().toString().trim();
 
                         Map<String,String> userMap=new HashMap<>();
 
                         userMap.put("Full Name",fullName);
+                        userMap.put("Email Address",email);
                         userMap.put("Phone Number",phoneNumber);
                         userMap.put("password",password);
 

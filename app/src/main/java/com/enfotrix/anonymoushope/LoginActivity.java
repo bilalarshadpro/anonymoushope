@@ -69,8 +69,8 @@ public class LoginActivity extends AppCompatActivity {
                         for (QueryDocumentSnapshot documentSnapshot: task.getResult()){
                             String passwordFromDB=documentSnapshot.getString("password");
                             if (passwordFromDB.equals(str_pass)){
-                                Utils.putToken(str_phoneNo);
-                                Intent intent=new Intent(LoginActivity.this, MainActivity.class);
+                                //Utils.putToken(str_phoneNo);
+                                Intent intent=new Intent(LoginActivity.this, MainPageActivity.class);
                                 startActivity(intent);
                                 finish();
                             }
